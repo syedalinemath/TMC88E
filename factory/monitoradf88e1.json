@@ -1,0 +1,15 @@
+{
+	"name": "monitoradf88e1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fbea5732-5eca-47e8-b845-dcbfcdda0d52",
+		"tenantId": "e152c83c-150f-4285-8348-8b580fdc5746"
+	}
+}

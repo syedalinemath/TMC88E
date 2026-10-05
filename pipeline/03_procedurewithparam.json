@@ -1,0 +1,39 @@
+{
+	"name": "03_procedurewithparam",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[loadaddressdata2withparam]",
+					"storedProcedureParameters": {
+						"coureg": {
+							"value": "United Kingdom",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "tillyesterday"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-10-03T02:40:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
